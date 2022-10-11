@@ -36,6 +36,7 @@ seqtk subseq ${fasta}${nd}_Spades_contigs.fasta ${out}vir_combined_no_dupl_${nd}
 sed -i "s/NODE_/${nd}_NODE_/" ${out}${nd}phage_genomes.fasta
 
 
+
 #rm ${out}vir_combined_no_dupl_${nd} 
 rm ${out}vir_finder_${nd}
 rm ${out}vir_sorter_${nd}
