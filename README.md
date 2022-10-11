@@ -21,7 +21,6 @@ This repository accompanies the manuscript __"The skin phageome in Atopic Dermat
   
  ## Read QC and contigs  
  
- 
- 
+We combined FASTQ files created in this study with 2132 downloaded FASTQ files from NCBI using SRA toolkit. The files contained paired end reads from Bioproject PRJNA46333. Where necessary we combined multiple FASTQ files per sample to one file per sample before subjecting FASTQ samples to generating contigs with Spades. 
  
  
