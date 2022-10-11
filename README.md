@@ -25,9 +25,20 @@ We combined FASTQ files created in this study with 2132 downloaded FASTQ files f
 >>* This [script](read_to_contig/4_run_preProcessing.sh) can be used to download data from SRA sequence archive   
 >>* This [script](read_to_contig/4_run_preProcessing.sh) runs preProcesssing including Read trimming and exclusion of host DNA    
 >>* This [script](read_to_contig/5_run_meta_SPADES.sh) combines multiple QCed FASTQ files for metaSpades contig generation  
+>>* This [script](rVLP_discovery/1_contigQC_with_metaQUAST.sh) runs contig QC using QUAST software     
 
  ## Discovery of viral like particles (VLP)  
  
 We used [Virsorter2](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00990-y) and [DeepVir finder](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8172088/) to identify contigs that potentialy contain viral sequences. For both approaches we are using contigs (at least 1500bp long) assembled with metaSpades. Virsorter internally identifies coding sequences (CDS) in input DNA sequenes with Prodigal then annotation of predicted CDS is done with HMMER3 against Pfam and a database developed by the Virsorter. DeepVir finder works similarly. They use slightly different databases and run their classification workflow based on a neural net algorithm instead of a random forest classifier. DeepVir finder returns a Posterior probability for every contig, thus we applied a cut off of 0.95.  
- 
- 
+>>* This [script](VLP_discovery/3_VirSorter.sh) runs Virsorter 2  
+>>* This [script](VLP_discovery/2_Deep_virfinder.sh) runs DeepVir finder  
+>>* This [script](VLP_discovery/4_phage_contig_per_sample.sh) calculates the fraction of phage contig per sample  
+>>* This [script](VLP_discovery/5_get_sample_summaries.sh) prepares sample summaries    
+
+## AD phagome database  
+
+
+
+
+
+
