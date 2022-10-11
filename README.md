@@ -4,6 +4,11 @@
 This repository accompanies the manuscript __"The skin phageome in Atopic Dermatitis"__ 
 <br/><br/> <br/>
 
+<p align="center">
+<img src="/img/figure_4_for_github.jpg" alt="candidate genomes" width="600"/>
+<br/><br/>
+
+
 
 
 
