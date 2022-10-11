@@ -1,8 +1,9 @@
 # AD_phageDiscovery  
 ## Table of contents  
 1. [About this Repository](#About-this-Repository)  
-2. [Discovery of viral like particles](#Discovery-of-viral-like-particles)  
-3. [AD phagome database  ](#AD-phagome-database)  
+2. [Read QC and contigs](#Read-QC-and-contigs)    
+3. [Discovery of viral like particles](#Discovery-of-viral-like-particles)  
+4. [AD phagome database  ](#AD-phagome-database)  
 
 ## About this Repository
 This repository accompanies the manuscript __"The skin phageome in Atopic Dermatitis"__ 
