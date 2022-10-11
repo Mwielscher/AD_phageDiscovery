@@ -1,7 +1,7 @@
 # AD_phageDiscovery  
 ## Table of contents  
 1. [About this Repository](#About-this-Repository)  
-2. [Discovery of viral like particles (VLP)](#Discovery-of-viral-like-particles-(VLP))  
+2. [Discovery of viral like particles](#Discovery-of-viral-like-particles)  
 3. [AD phagome database  ](#AD-phagome-database)  
 
 ## About this Repository
@@ -31,7 +31,7 @@ We combined FASTQ files created in this study with 2132 downloaded FASTQ files f
 >>* This [script](read_to_contig/5_run_meta_SPADES.sh) combines multiple QCed FASTQ files for metaSpades contig generation  
 >>* This [script](rVLP_discovery/1_contigQC_with_metaQUAST.sh) runs contig QC using QUAST software     
 
- ## Discovery of viral like particles (VLP)  
+ ## Discovery of viral like particles  
  
 We used [Virsorter2](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00990-y) and [DeepVir finder](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8172088/) to identify contigs that potentialy contain viral sequences. For both approaches we are using contigs (at least 1500bp long) assembled with metaSpades. Virsorter internally identifies coding sequences (CDS) in input DNA sequenes with Prodigal then annotation of predicted CDS is done with HMMER3 against Pfam and a database developed by the Virsorter. DeepVir finder works similarly. They use slightly different databases and run their classification workflow based on a neural net algorithm instead of a random forest classifier. DeepVir finder returns a Posterior probability for every contig, thus we applied a cut off of 0.95.  
 >>* This [script](VLP_discovery/3_VirSorter.sh) runs Virsorter 2  
