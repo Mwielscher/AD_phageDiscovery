@@ -22,7 +22,12 @@ This repository accompanies the manuscript __"The skin phageome in Atopic Dermat
  ## Read QC and contigs  
  
 We combined FASTQ files created in this study with 2132 downloaded FASTQ files from NCBI using SRA toolkit. The files contained paired end reads from Bioproject PRJNA46333. Raw paired-end FASTQ files were then trimmed with Trimmomatic-0.35, adapters were removed using default settings, a sliding window of 4:20 was used and the minimum read length was set to 50. Host sequence contamination was removed with a custom script. We used Bowtie2 to align the FASTQ files against the human reference genome (GRCh38). Subsequently, we use samtools to split the reads into not aligned and aligned to human reference Genome and mouse genome. We used not aligned reads for all further analysis. Where necessary we combined multiple FASTQ files per sample to one file per sample before subjecting FASTQ samples to generating contigs with Spades. 
+>>* This [script](read_to_contig/4_run_preProcessing.sh) can be used to download data from SRA sequence archive   
+>>* This [script](read_to_contig/4_run_preProcessing.sh) runs preProcesssing including Read trimming and exclusion of host DNA    
 >>* This [script](read_to_contig/5_run_meta_SPADES.sh) combines multiple QCed FASTQ files for metaSpades contig generation  
 
+ ## Discover viral like particles (VLP)  
+ 
+ 
  
  
