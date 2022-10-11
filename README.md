@@ -19,4 +19,9 @@ This repository accompanies the manuscript __"The skin phageome in Atopic Dermat
  The scripts to perform the analyses presented in the manuscript are deposited in this repository. These are custom scripts, which were  run on my local destop computer or designed to run on a [SGE cluster](http://gridscheduler.sourceforge.net/htmlman/manuals.html). Any script may serve a building block for a process in any workflow language.  
   
   
-  
+ ## Read QC and contigs  
+ 
+ 
+ 
+ 
+ 
