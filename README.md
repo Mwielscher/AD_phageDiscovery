@@ -49,4 +49,7 @@ Contigs potentially containing viral sequences identified by Virsorter and DeepV
 >>* This [script](VLP_database/3_DRAM_annot.sh) annotates VLP using DRAM software  
 >>* This [script](VLP_database/4_compare_to_Gut_phageDB.sh) compares VLP sequences to human Gut phage database     
 
+## Read hit counting against VLP  
+We removed stretches of bacterial genomes from Prophage contigs and then used all VLP as reference. We used [Bowtie2 software](https://bowtie-bio.sourceforge.net/bowtie2/index.shtml) with setting “very sensitive” retrieving the top 10 hits. Reads mapping to multiple genomes or contigs were discarded from quantitative analysis. Aligned reads were counted and averaged with jgi_summarize_bam_depth as implemented by [metabat](https://bitbucket.org/berkeleylab/metabat/src/master/) package. This provides us the sum of exactly aligned bases which is then dived by the contig length. We used this value to calculate a CPM like value. This is the contig length normalized aligned bases times 106 divided by the total number of aligned bases per sample. Regression analysis were performed on CPM data. We used [MaAsLin 2 software](https://github.com/biobakery/Maaslin2). Count data were log transformed and regressed against inflammation score, where skin swaps from unaffected or healthy individual were rated 0.  
+
 
