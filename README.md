@@ -44,6 +44,9 @@ We used [Virsorter2](https://microbiomejournal.biomedcentral.com/articles/10.118
 
 Contigs potentially containing viral sequences identified by Virsorter and DeepVir finder for each participant were combined. All contigs were compared pairwise and based on their sequence similarity clustered Best representative genome from any group is selected and similar contigs based on an ANI similarity cut off of 95% are discarded as implemented in dRep. The dereplicated viral contigs were evaluated for quality and completeness using [checkV software](https://www.nature.com/articles/s41587-020-00774-7). To determine completeness and quality for every contig, CDS are compared to viral and bacterial databases and then classified as either microbial, vial or not annotated gene. We used [MASH software](https://mash.readthedocs.io/en/latest/) to generate distance measures between viral contigs, RefSeq viral Genomes and two large scale phage databases. For this we retrieved all complete NCBI viral genomes which had bacterial listed as their host. Furthermore, we downloaded a GutPhage data base described by [Camarillo-Guerrero et al](https://www.sciencedirect.com/science/article/pii/S0092867421000726) and the complete [IMG/VR v3](https://academic.oup.com/nar/article/49/D1/D764/5952208?login=true), this is collection of uncultivated viral genomes across all earth habitats. We generated MASH sketch tables out of the data and ran mash screen with the winner takes all flag to reduce redundancy. We used the mashtree convenience function to get a matrix of sample distances. Those sample distances are based on DNA sequences similarity.  
 
-
+>>* This [script](VLP_database/1_deReplication.sh) performs derelication of VLP found in individual samples 
+>>* This [script](VLP_database/2_checkV.sh) runs checkV software  
+>>* This [script](VLP_database/3_DRAM_annot.sh) annotates VLP using DRAM software  
+>>* This [script](VLP_database/4_compare_to_Gut_phageDB.sh) compares VLP sequences to human Gut phage database     
 
 
