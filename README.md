@@ -11,7 +11,7 @@ This repository accompanies the manuscript __"The skin phageome in Atopic Dermat
 <br/><br/> <br/>
 
 <p align="center">
-<img src="/img/figure_4_for_github.jpg" alt="candidate genomes" width="600"/>
+<img src="/img/figure_4_for_github_1.jpg" alt="candidate genomes" width="600"/>
 <br/><br/>
 
 
